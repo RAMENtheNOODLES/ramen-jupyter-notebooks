@@ -1,12 +1,15 @@
 # Constants
 VALID_RESPONSES = [
-  [["Hello", "Hey", "Hola"], "Hi there!"]
+  [["Hello", "Hey", "Hola"], "Hi there!"],
+  [["What is your name?", "What's your name?", "Name?", "Name"], "My name is Chatty, the chatbot!"]
 ]
 
 def main():
   while True :
     print("Please ask a question and I'll answer it as best as I can!")
-    response = input(">")
+    response = input("> ")
+    if response in ["quit", "q", "exit"]:
+      return
     resp(response)
     
     
