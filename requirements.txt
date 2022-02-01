@@ -2,3 +2,4 @@ pandas
 matplotlib
 chatterbot
 chatterbot_corpus
+spacy
