@@ -23,3 +23,7 @@ list_trainer = ListTrainer(mybot)
 
 for item in (small_talk):
   list_trainer.train(item)
+  
+
+response = mybot.get_response(input("Enter a response to talk to the bot\n> "))
+print(response)
