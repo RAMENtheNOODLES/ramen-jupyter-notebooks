@@ -16,3 +16,7 @@ def resp(response):
       if response == VALID_RESPONSES[i][0][k]:
         print(VALID_RESPONSES[i][1])
         return
+      
+
+if __name__ == "__main__":
+  main()
