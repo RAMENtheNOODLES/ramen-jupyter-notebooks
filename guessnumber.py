@@ -3,13 +3,14 @@ import random
 debug = True
 rRange = [1,100]
 closeRange = 10
-allowedTries = 15
+allowedTries = 10
+percentage = 100
 tries = 1
 rNumber = random.randrange(*rRange)
 
 print(f"Guess a number from {rRange[0]} to {rRange[1]}")
 
-while tries < allowedTries:
+while True:
     if debug:
         print(rNumber)
     
@@ -28,6 +29,7 @@ while tries < allowedTries:
         print("Your guess was correct!")
         print(f"It took you {tries} attempt(s) to guess the number {rNumber}!" if tries > 0 else "You guessed the number " +
                   f"{rNumber} on your first attempt!")
+        print(f"Your score was {percentage}%!")
         break
         
     if guess < rNumber:
@@ -42,5 +44,7 @@ while tries < allowedTries:
             print("You were too high")
     
     print("Your guess was incorrect!\nPlease try again!")
+    percentage = round((allowedTries - tries) / allowedTries, 1) * 100 if tries < allowedTries else 0
+    # print(f"{percentage}%")
     tries += 1
     
