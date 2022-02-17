@@ -1,12 +1,19 @@
 import random
 
-debug = True
+debug = False
 rRange = [1,100]
 closeRange = 10
 allowedTries = 10
 percentage = 100
 tries = 1
 rNumber = random.randrange(*rRange)
+
+difficulty = {
+    "easy": [1,10],
+    "medium": [1,50],
+    "hard": [1,100],
+    "expert": [1,1000],
+}
 
 print(f"Guess a number from {rRange[0]} to {rRange[1]}")
 
