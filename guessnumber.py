@@ -1,4 +1,8 @@
-import random
+import random 
+
+print("Enter a number from a list of difficulties:")
+print("1:\t\tEasy\n2:\t\tMedium\n3:\t\tHard\n4:\t\tExpert")
+selection = input(">")
 
 debug = False
 rRange = [1,100]
