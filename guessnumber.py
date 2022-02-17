@@ -1,7 +1,8 @@
 import random
 
-debug = False
+debug = True
 rRange = [1,100]
+closeRange = 10
 allowedTries = 15
 tries = 1
 rNumber = random.randrange(*rRange)
@@ -30,11 +31,16 @@ while tries < allowedTries:
         break
         
     if guess < rNumber:
-        print("You were too low")
+        if guess + closeRange > rNumber:
+            print("You were too low... But you are close!")
+        else:
+            print("You were too low")
     else:
-        print("You were too high")
+        if guess - closeRange < rNumber:
+            print("You were too high... But you are close!")
+        else:
+            print("You were too high")
     
     print("Your guess was incorrect!\nPlease try again!")
     tries += 1
-    
     
