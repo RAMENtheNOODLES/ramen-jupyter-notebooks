@@ -31,7 +31,6 @@ while True:
     temp_guess = []
     
     for i in range(5):
-        print(guess[i])
         if guess[i] == word[i]:
             try:
                 temp_guess.remove(guess[i])
@@ -40,11 +39,15 @@ while True:
             correct_letters.append(guess[i])
             temp_prev_guess += Fore.GREEN + guess[i]
         else:
+            n = False
             for k in range(5-i):
                 if guess[i] == word[k]:
                     temp_guess.append(guess[i])
                     temp_prev_guess += Fore.YELLOW + str(guess[i])
-            temp_guess.append(guess[i])
-            temp_prev_guess += Fore.BLUE + str(guess[i])
+                    n = True
+                    break
+            if not n:
+                temp_guess.append(guess[i])
+                temp_prev_guess += Fore.BLUE + str(guess[i])
     
     prev_guesses.append(temp_prev_guess)
