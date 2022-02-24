@@ -3,3 +3,4 @@ matplotlib
 chatterbot
 chatterbot_corpus
 spacy
+colorama
