@@ -27,6 +27,10 @@ while True:
         print(Fore.RED + "Please enter a 5 letter word")
         continue
         
+    if guess == word:
+        print(Fore.BLUE + "You guessed the right word!")
+        break
+        
     temp_prev_guess = ""
     temp_guess = []
     
