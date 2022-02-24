@@ -52,6 +52,6 @@ while True:
                     break
             if not n:
                 temp_guess.append(guess[i])
-                temp_prev_guess += Fore.BLUE + str(guess[i])
+                temp_prev_guess += Fore.RED + str(guess[i])
     
     prev_guesses.append(temp_prev_guess)
