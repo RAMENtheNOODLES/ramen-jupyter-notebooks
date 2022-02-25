@@ -8,6 +8,10 @@ init(autoreset = True)
 
 pos = lambda y, x: Cursor.POS(x, y)
 
+wordlist = open("wordlelist.csv", "r").read().lower().split("\n")
+
+# print(f"Word list:\n{wordlist}")
+
 print("" + pos(1, 1))
 
 print(Fore.GREEN + "Wordle in Python! (Currently a WIP)")
@@ -16,7 +20,9 @@ print("Please guess a 5 letter word")
 correct_letters = []
 guessed_letters = []
 prev_guesses = []
-word = "start"
+word = wordlist[random.randrange(0, len(wordlist) - 1)]
+
+print(word)
 
 while True:
     print("" + pos(max_y - 1, max_x - 1))
@@ -30,6 +36,10 @@ while True:
     if guess == word:
         print(Fore.BLUE + "You guessed the right word!")
         break
+        
+    if guess not in wordlist:
+        print(Fore.RED + "That is not a valid word")
+        continue
         
     temp_prev_guess = ""
     temp_guess = []
