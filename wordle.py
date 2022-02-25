@@ -2,6 +2,8 @@ from colorama import init, Fore, Back, Style, Cursor
 import random
 import os
 
+os.system("clear")
+
 max_x, max_y = os.get_terminal_size()
 
 init(autoreset = True)
@@ -27,10 +29,15 @@ print(word)
 while True:
     print("" + pos(max_y - 1, max_x - 1))
     for i in range(len(prev_guesses)):
-        print(prev_guesses[i])
-    guess = input(">")
+        print(pos(round(max_y/2) + len(prev_guesses), round(max_x/2)) + f"{Fore.CYAN}{i+1} " + prev_guesses[i])
+        
+    print(pos(max_y - 1, 1) + ">     ")
+    guess = input(pos(max_y - 1, 1) + Fore.CYAN + ">" + Fore.RESET)
+    
+    # print("" + pos(round(max_y/2) + len(prev_guesses), round(max_x/2)) + guess)
+    
     if len(guess) != 5:
-        print(Fore.RED + "Please enter a 5 letter word")
+        print(pos(max_y - 2, 1) + Fore.RED + "Please enter a 5 letter word")
         continue
         
     if guess == word:
