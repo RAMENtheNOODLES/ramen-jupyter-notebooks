@@ -10,7 +10,7 @@ init(autoreset = True)
 
 pos = lambda y, x: Cursor.POS(x, y)
 
-wordlist = open("wordlelist.csv", "r").read().lower().split("\n")
+wordlist = open("better_wordle_list.csv", "r").read().lower().split("\n")
 
 # print(f"Word list:\n{wordlist}")
 
