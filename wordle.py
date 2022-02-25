@@ -32,7 +32,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
 # print(word)
 
 while True:
-    if len(prev_guesses) == 5:
+    if len(prev_guesses) == 6:
         print(pos(5, 1) + "")
         print(f"You ran out of guesses!\nThe word was:\t{word}")
         break
