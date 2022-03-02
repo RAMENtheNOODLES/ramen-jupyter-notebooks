@@ -1,0 +1,4 @@
+prompt, (Eat, Sleep, Attack, Defend) > (eat, sleep, attack, defend): Gucci
+
+> eat ^
+* text: Hello, you are eating!
