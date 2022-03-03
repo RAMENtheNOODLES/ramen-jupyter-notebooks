@@ -38,5 +38,5 @@
   - This command is currently not implemented
 
 ---
-[Return to TOC](toc.md)
+[Return to the Table of Contents](toc.md)
 [^1]: The colors you can use are: Black, Red, Green, Yellow, Blue, Magenta, Cyan, and White
