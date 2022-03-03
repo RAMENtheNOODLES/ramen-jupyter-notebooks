@@ -29,7 +29,22 @@ Root -
 - Wait
   - Example:
     - `wait, 2: You waited for 2 seconds!`
-  - The command 
-
+  - Usage:
+    - `wait, [# of seconds to wait]: [Display text]`
+  - The command waits for the specified amount of time, then displays some text to the user
+- Goto
+  - Example:
+    - `goto: north`
+  - Usage:
+    - `goto: [name of file to go to]`
+  - The command switches to another file ***in the same chapter*** and reads from there
+- Goto > (chapter): (file)
+  - Example:
+    - `goto > middle: story`
+  - Usage:
+    - `goto > [chapter]: [file in the chapter]`
+  - The command switches to another file in ***another*** chapter, set the file to **story** to read the main file
+- Plugin
+  - This command is currently not implemented
 
 [^1]: The colors you can use are: Black, Red, Green, Yellow, Blue, Magenta, Cyan, and White
