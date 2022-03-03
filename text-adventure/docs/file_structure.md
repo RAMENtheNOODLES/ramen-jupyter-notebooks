@@ -16,3 +16,5 @@ The file structure goes as follows:
     ├── [plugin_name].plugin    # Optional plugin file that contains the code that is customizable
     └── ...                     # You can create as many plugins as you want
 ```
+---
+[Return to the Table of Contents](toc.md)
