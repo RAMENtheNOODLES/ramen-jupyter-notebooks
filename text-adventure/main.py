@@ -36,6 +36,8 @@ def read_story(chapter, option="story.txt"):
         
         if i.__contains__("`"):
             continue
+        if i == "\n":
+            continue
         if re.match("text, (\w*): ", i):
             color = get_colors(i.split(", ")[1].split(":")[0])
             # print(i.split(", ")[1].replace(":", ""))
@@ -112,7 +114,7 @@ def plugin(plugin_name, linenum=0):
                 if choice in choices.split(", "):
                     for k in range(len(lines)):
                         if lines[k] == f"> {choice.lower()}":
-                            
+                            pass
                     return
                 
                 print("That is not a valid option...")
