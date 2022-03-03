@@ -4,7 +4,9 @@
 The file structure goes as follows:
 ```
 .
-├── Example Chapter             # Chapter Files
+├── docs
+│   ├── TOC.md                  # Table of Contents
+├── [chapter_name]              # Name of the chapter, you can add as many as you want, but you have to have at least one
 │   ├── story.txt               # Required file that contains the story for the chapter
 │   ├── [area_name].txt         # Optional secondary file that contains the story for an area
 │   └── ...                     # You can add as many area files as you want
