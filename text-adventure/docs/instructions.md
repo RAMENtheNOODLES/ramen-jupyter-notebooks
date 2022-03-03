@@ -53,4 +53,6 @@ The file structure goes as follows:
 - Plugin
   - This command is currently not implemented
 
+---
+[Return to TOC](toc.md)
 [^1]: The colors you can use are: Black, Red, Green, Yellow, Blue, Magenta, Cyan, and White
