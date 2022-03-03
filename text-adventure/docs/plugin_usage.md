@@ -1,7 +1,7 @@
 # Plugin Usage
 
 ## Commands
-Plugin files share all of the commands that a regular story or area file have
+Plugin files share all of the commands that a regular story or area file have.
 There are some unique commands as well:
 
 - Functions
