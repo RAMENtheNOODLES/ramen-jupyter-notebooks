@@ -7,6 +7,7 @@ The file structure goes as follows:
 ├── docs
 │   ├── TOC.md                  # Table of Contents
 │   ├── file_structure.md       # This file
+│   ├── plugin_usage.md         # Usage of plugins
 │   └── instructions.md         # Instructions on how to use TAC
 ├── [chapter_name]              # Name of the chapter, you can add as many as you want, but you have to have at least one
 │   ├── story.txt               # Required file that contains the story for the chapter
