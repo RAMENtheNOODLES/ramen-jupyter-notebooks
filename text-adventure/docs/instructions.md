@@ -34,6 +34,16 @@
   - Usage:
     - `goto > [chapter]: [file in the chapter]`
   - The command switches to another file in ***another*** chapter, set the file to **story** to read the main file
+- Stop, (optional color): (Optional Message)
+  - Example:
+    - `stop: You won!`
+    - `stop`
+    - `stop, red: You lost...`
+  - Usage
+    - `stop`
+    - `stop: [Display text]`
+    - `stop, [color]: [Display text]`
+  - This command stops the program and optionally displays a message to the user in an optional color.
 - Plugin
   - This command is currently not implemented
 
