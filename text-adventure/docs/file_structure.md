@@ -15,7 +15,7 @@ The file structure goes as follows:
 │   └── ...                     # You can add as many area files as you want
 ├── story_chapters.txt          # Required file that contains the names of all the chapters (the folder name)
 └── plugins                     # Optional folder that contains all of the plugins for the adventure
-    ├── example.plugin
+    ├── example.plugin          # An example plugin that shows the usage of unique commands
     ├── [plugin_name].plugin    # Optional plugin file that contains the code that is customizable
     └── ...                     # You can create as many plugins as you want
 ```
