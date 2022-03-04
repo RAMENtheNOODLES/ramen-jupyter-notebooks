@@ -1,7 +1,7 @@
 # Plugin Usage
 
 ## Commands
-Plugin files share all of the commands that a regular story or area file have.
+Plugin files share all of the commands[^1] that a regular story or area file have.
 
 There are some unique commands as well:
 
@@ -19,7 +19,7 @@ There are some unique commands as well:
         ...
       }
       ```
-  - The func command allows you to create functions in a plugin file. You can run it from the `run` command (explained below) or run it from a prompt[^1].
+  - The func command allows you to create functions in a plugin file. You can run it from the `run` command (explained below) or run it from a prompt[^2].
 - Run
   - Example:
     - ```
@@ -34,6 +34,7 @@ There are some unique commands as well:
   - The run command allows you to run a function within a plugin file.
 
 ---
-[^1]: Check out an example [plugin](../plugins/example.plugin) on how to do this
+[^1]: [Regular Commands](instructions.md)
+[^2]: Check out an example [plugin](../plugins/example.plugin) on how to do this
 
 [Return to Table of Contents](toc.md)
