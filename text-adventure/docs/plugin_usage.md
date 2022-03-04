@@ -19,7 +19,21 @@ There are some unique commands as well:
         ...
       }
       ```
-  - 
+  - The func command allows you to create functions in a plugin file. You can run it from the `run` command (explained below) or run it from a prompt[^1].
+- Run
+  - Example:
+    - ```
+      run > hello
+      
+      func hello {
+        text: Hello World!
+      }
+      ```
+  - Usage:
+    - `run > [function name]`
+  - The run command allows you to run a function within a plugin file.
 
 ---
+[^1]: Check out an example [plugin](../plugins/example.plugin) on how to do this
+
 [Return to Table of Contents](toc.md)
