@@ -27,20 +27,45 @@ black_pieces = {
 }
 
 for file in range(8):
+    isKingRow = file in [0, 7]
+    isPawnRow = file in [1, 6]
+    onWhiteSide = file in [0, 1]
     for rank in range(8):
         isLightSquare = (file + rank) % 2 != 0
         # print(isLightSquare)
         
-        if isLightSquare:
-            board.append(Back.GREEN + Fore.WHITE + " " + white_pieces.get("pawn") + " ")
+        tile = " "
+        color = ""
+        
+        if onWhiteSide:
+            color = Fore.WHITE
         else:
-            board.append(Back.BLUE + Fore.BLACK + " " + white_pieces.get("pawn") + " ")
+            color = Fore.BLACK
+        
+        if isPawnRow:
+            tile = white_pieces["pawn"]
+        if isKingRow:
+            if rank in [0, 7]:
+                tile = white_pieces["rook"]
+            if rank in [1, 6]:
+                tile = white_pieces["knight"]
+            if rank in [2, 5]:
+                tile = white_pieces["bishop"]
+            if rank is 3:
+                tile = white_pieces["queen"]
+            if rank is 4:
+                tile = white_pieces["king"]
+        
+        if isLightSquare:
+            board.append(Back.GREEN + color + " " + tile + " ")
+        else:
+            board.append(Back.BLUE + color + " " + tile + " ")
 
 row = 0
 for i in range(8):
     t = ""
     for k in range(row*8, (row*8) + 8):
-        print(k)
+        # print(k)
         t += board[k]
     rows.append(t)
     row += 1
