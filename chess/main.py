@@ -1,6 +1,7 @@
 from colorama import init, Fore, Back, Style, Cursor
 import random
 import os
+import chess_logic
 
 print("Chess!")
 
