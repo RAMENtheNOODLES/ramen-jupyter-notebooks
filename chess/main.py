@@ -70,5 +70,8 @@ for i in range(8):
     rows.append(t)
     row += 1
     
-for i in rows:
-    print(i)
+for i in range(len(rows)):
+    print(str(i + 1) + " " + rows[i])
+    
+    if i == 7:
+        print("   a  b  c  d  e  f  g  h")
