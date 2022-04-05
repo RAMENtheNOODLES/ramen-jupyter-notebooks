@@ -32,17 +32,15 @@ for i in lines:
     for k in re.split("(\d*\w)", i):
         if k in ["", " "]:
             continue
-        print(k)
+        #print(k)
         #print(*list(k))
         l = list(k)
-        print(*l)
-        print(l[0])
+        #print(*l)
+        #print(l[0])
         for j in range(0, int(l[0]) if len(l) == 2 else int(l[0] + l[1])):
-            canvas += l[1] if len(l) == 2 else l[2]
+            canvas += colors[l[1]] + "▀" if len(l) == 2 else colors[l[2]] + "▀"
     canvas += "\n"
 
-for i in colors.keys():
-    canvas.replace(i, colors[i] + "□")
     
 print(canvas)
 pixel = "□"
